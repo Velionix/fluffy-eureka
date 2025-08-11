@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 1. SEO优化: 更有吸引力的标题和描述 -->
+    <title>Velionix 官方下载 - 让生活更高效</title>
+    <meta name="description" content="从官方渠道安全下载 Velionix 最新版安卓应用。Velionix 是一款[这里写你应用的一句话简介]，即刻体验。">
+
+    <!-- 2. 添加网站图标 (Favicon) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- 3. 引入Google Fonts中的Poppins字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS动画：定义一个从下方滑入并淡入的效果 */
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 基本样式重置 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            /* 4. 使用引入的Poppins字体，如果失败则使用系统默认字体 */
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            
+            /* 5. 使用柔和的渐变背景 */
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; /* 确保内边距不会影响总宽度 */
+        }
+
+        /* 下载卡片容器 */
+        .download-card {
+            background-color: rgba(255, 255, 255, 0.9); /* 使用带一点透明的白色，增加质感 */
+            padding: 40px 30px;
+            border-radius: 20px; /* 更大的圆角 */
+            
+            /* 6. 使用更柔和、多层次的阴影，让卡片看起来更“浮起” */
+            box-shadow: 0 8px 32px rgba(0, 38, 115, 0.1), 0 4px 12px rgba(0, 38, 115, 0.05);
+            
+            max-width: 340px;
+            width: 100%;
+            backdrop-filter: blur(5px); /* 背景模糊效果（玻璃拟态） */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            
+            /* 7. 应用入场动画 */
+            animation: fadeInSlideUp 0.8s ease-out forwards;
+        }
+
+        /* 应用图标 */
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 24px;
+            margin-bottom: 15px;
+            
+            /* 8. 给图标也加上微妙的阴影，并带有品牌色 */
+            box-shadow: 0 4px 15px rgba(29, 120, 255, 0.2);
+            
+            /* 为图标单独设置入场动画延迟 */
+            opacity: 0;
+            animation: fadeInSlideUp 0.8s ease-out 0.2s forwards;
+        }
+
+        /* 应用名称 */
+        .app-name {
+            font-size: 28px;
+            font-weight: 700; /* 更粗的字重 */
+            color: #1a202c;
+            margin: 0 0 5px 0;
+            opacity: 0;
+            animation: fadeInSlideUp 0.8s ease-out 0.3s forwards;
+        }
+
+        /* 版本信息 */
+        .app-version {
+            font-size: 14px;
+            color: #718096;
+            margin-bottom: 25px;
+            font-weight: 400;
+            opacity: 0;
+            animation: fadeInSlideUp 0.8s ease-out 0.4s forwards;
+        }
+
+        /* 下载按钮 */
+        .download-button {
+            display: block; /* 改为块级元素，宽度100% */
+            width: 100%;
+            box-sizing: border-box; /* 确保内边距和边框不影响总宽度 */
+
+            /* 9. 使用更现代、更有活力的蓝色 */
+            background: linear-gradient(45deg, #3672f8 0%, #1d78ff 100%);
+            
+            color: #ffffff;
+            padding: 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            
+            /* 10. 按钮也加上精致的阴影 */
+            box-shadow: 0 4px 15px rgba(29, 120, 255, 0.3);
+            
+            /* 11. 更流畅的过渡效果 */
+            transition: all 0.3s ease;
+            
+            opacity: 0;
+            animation: fadeInSlideUp 0.8s ease-out 0.5s forwards;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px); /* 悬停时轻微上浮 */
+            box-shadow: 0 7px 20px rgba(29, 120, 255, 0.4);
+        }
+
+        .download-button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(29, 120, 255, 0.3);
+        }
+        
+        /* 底部提示信息 */
+        .footer-note {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #a0aec0;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInSlideUp 0.8s ease-out 0.6s forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="download-card">
+        <!-- 确保 app-icon.png 文件和 index.html 在同一目录 -->
+        <img src="app-icon.png" alt="应用图标" class="app-icon">
+
+        <h1 class="app-name">Velionix</h1>
+
+        <p class="app-version">版本: v0.0.1</p>
+
+        <!-- 确保Gitee链接有效，或者换成你已签名的APK链接 -->
+        <a href="https://gitee.com/yangtianhaode/Velionix.github.io/releases/download/v0.0.1/app-release-unsigned.apk" class="download-button" download="Velionix-v0.0.1.apk">
+            下载 Android 版
+        </a>
+        
+        <p class="footer-note">
+            如遇 .zip 后缀，请重命名为 .apk 安装<br>
+            如无法安装，请在系统设置中允许“安装未知来源的应用”
+        </p>
+    </div>
+
+</body>
+</html>
